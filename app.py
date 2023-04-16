@@ -13,6 +13,8 @@ classifier = load_model('model.h5')
 
 emotion_labels = ['Angry', 'Happy', 'Neutral', 'Sad']
 
+webrtc_streamer = streamlit_webrtc.component.webrtc_streamer()
+
 emotion_map = {
     0: 0,  # Angry
     1: 0,  # Angry (ค่าใหม่ที่จะแทนที่ 'Disgust' เป็น 'Angry')
