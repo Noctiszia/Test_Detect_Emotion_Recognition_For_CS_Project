@@ -13,7 +13,7 @@ classifier = load_model('model.h5')
 
 emotion_labels = ['Angry', 'Happy', 'Neutral', 'Sad']
 
-webrtc_streamer = streamlit_webrtc.component.webrtc_streamer()
+webrtc_streamer = streamlit_webrtc.component.webrtc_streamer(key="some_key")
 
 emotion_map = {
     0: 0,  # Angry
